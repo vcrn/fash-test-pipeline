@@ -28,16 +28,13 @@ pub fn run() {
 }
 
 /// Used by radio buttons to select hashing algorithm
-#[derive(PartialEq, Eq)]
-#[derive(Default)]
+#[derive(PartialEq, Eq, Default)]
 pub enum RadioHash {
     #[default]
     Sha256,
     Sha1,
     Md5,
 }
-
-
 
 #[derive(Default)]
 struct Fash {
